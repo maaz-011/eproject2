@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Website</title>
+    <link rel="stylesheet" href="./products-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .theme-color { color: #C9B194; }
+        .theme-bg { background-color: #C9B194; }
+        .product-card { border: 1px solid #C9B194; border-radius: 10px; padding: 10px; }
+        .btn-theme { background-color: #C9B194; color: white; border: none; }
+        .btn-theme:hover { background-color: #B09A84; }
+    </style>
+</head>
+
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+              <img src="../contactUs/logo.png" alt="logo" height="70" width="110" class="logo">
+            </a>
+    
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../aboutUs/index.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="../products/index.html">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="../contactUs/index.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <section class="container my-5">
+        <h2 class="text-center theme-color">Our Categories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://ryanacalendars.netlify.app/images/2/Pinkpops/4.jpg" class="card" alt="Journals">
+                    <div class="card-body text-center">
+                        <h5 class="card-title theme-color">Journals</h5>
+                        <button class="btn btn-theme" onclick="showProducts('Journals')">View Products</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://ryanacalendars.netlify.app/images/2/Spiral/8.jpeg" class="card-img-top" alt="Diaries">
+                    <div class="card-body text-center">
+                        <h5 class="card-title theme-color">Diaries</h5>
+                        <button class="btn btn-theme" onclick="showProducts('Diaries')">View Products</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://ryanacalendars.netlify.app/images/Calenders/Wall%20Calenders/1.jpg" class="card-img-top" alt="Calendars">
+                    <div class="card-body text-center">
+                        <h5 class="card-title theme-color">Calendars</h5>
+                        <button class="btn btn-theme" onclick="showProducts('Calendars')">View Products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="productList" class="container my-5" style="display: none;">
+        <h3 class="text-center theme-color">Available Products</h3>
+        <div id="productsContainer" class="row"></div>
+    </section>
+    <footer class="footer mt-5 p-3 text-center">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3 footer-bg">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4 footer-bg heading">
+                    <i class="fas fa-gem me-3 mt-5"></i>Company name
+                  </h6>
+                  <p class="text text-center">
+                    © 2025 Copyright: ChronoNotes
+      
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-bg">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4 heading mt-5">
+                    Information
+                  </h6>
+                  <p>
+                    <a href="#!" class="text text-center">Company</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text text-center">About Us</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text text-center">Contact Us</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text text-center">Our Team</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-bg">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4 heading mt-5">
+                    Products
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-center text">Calendars</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-center text">Notebooks</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-center text">Sales</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-center text">Best-selling</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="text-center col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-center text-uppercase fw-bold mb-4 heading mt-5">Customer Service</h6>
+                  <p class="text2 text-centeras"><i class="fas fa-home me-3 "></i>FAQs</p>
+                  <p class="text2">
+                    <i class="fas fa-envelope me-3 "></i>
+                    Shipping information
+                  </p>
+                  <p class="text2"><i class="fas fa-phone me-3 "></i>Return and exchange </p>
+                  <p class="text2"><i class="fas fa-print me-3 "></i>Customer reviews</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+        </footer>
+        <section class="d-flex justify-content-center justify-content-lg p-4 border-bottom">
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f icon"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter icon"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google icon"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram icon"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin icon"></i>
+            </a>
+            <a href="" class="me-4 text-reset ">
+              <i class="fab fa-github icon"></i>
+            </a>
+        </section>
+      </footer>
+    <script>
+
+        function showProducts(category) {
+    window.location.href = `products.html?category=${category}`;
+}
+
+            
+    </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

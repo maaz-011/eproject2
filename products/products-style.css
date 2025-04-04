@@ -1,0 +1,80 @@
+.logo {
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.navbar {
+    background-color: #C9B194;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 14px;
+    text-align: center;
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar li a:hover {
+    color: #947e5b;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .product-card {
+        padding: 15px; /* Adds spacing inside each card */
+        margin-bottom: 15px; /* Adds spacing between cards */
+    }
+
+    .btn-theme {
+        padding: 10px 15px; /* Adjust button size */
+    }
+
+    .container {
+        padding: 15px; /* Adds spacing to the container */
+    }
+}
+.heading{
+    color: #A08963;
+    font-size: larger;
+}
+
+.heading:hover{
+    color: #C9B194;
+}
+
+.text{
+    text-decoration: none;
+    color: black;
+}
+
+.text:hover{
+    text-decoration: underline;
+}
+
+.text2{
+    color: black;
+}
+
+.text2:hover{
+    text-decoration: underline;
+}
+
+.icon{
+    color: #A08963;
+}
+
+.icon:hover{
+    color: #C9B194;
+    font-size: larger;
+}
